@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir C:\\\\Users\\\\HP\\\\OneDrive\\\\UR-study-semister 2\\\\c programming *)",
+      "Bash(python3 -c ' *)"
+    ]
+  }
+}

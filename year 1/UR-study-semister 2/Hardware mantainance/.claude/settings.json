@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(pandoc --version 2>$null)",
+      "PowerShell(if \\(-not $?\\) { \"pandoc not found\" })"
+    ]
+  }
+}

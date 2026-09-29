@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(python --version; python -c \"import pptx; print\\('pptx OK'\\)\" 2>&1)",
+      "PowerShell(py *)",
+      "PowerShell(Get-Command *)",
+      "PowerShell(& \"$env:TEMP\\\\create_pptx.ps1\" 2>&1)",
+      "WebSearch",
+      "PowerShell(& \"$env:TEMP\\\\add_videos.ps1\" 2>&1)",
+      "PowerShell(winget install *)",
+      "PowerShell(Get-Item \"C:\\\\Users\\\\HP\\\\OneDrive\\\\UR-study-semister 2\\\\English for general purpose\\\\Job_Market_Reality_Presentation.pptx\" | Select-Object Name, @{N=\"Size \\(MB\\)\";E={[math]::Round\\($_.Length/1MB,1\\)}}, LastWriteTime)",
+      "Bash(python -c ' *)",
+      "Bash(python3 *)"
+    ]
+  }
+}

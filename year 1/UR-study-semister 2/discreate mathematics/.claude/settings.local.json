@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-Content \"C:\\\\Users\\\\mkban\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-mkban-OneDrive-UR-study-semister-2-discreate-mathematics\\\\a903c35c-d71a-44cd-a857-56b70428436d\\\\tasks\\\\b58k2d05k.output\" -Wait)",
+      "Bash(Select-String --Pattern \"Converting|OK|FAILED|Done|ERROR\")",
+      "PowerShell(Stop-Process *)"
+    ]
+  }
+}
