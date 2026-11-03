@@ -1,20 +1,28 @@
 #include <iostream>
 #include <thread>
-
+#include <semaphore>
 using namespace std;
+
+
+
+counting_semaphore<1> sem(1);
 
 int balance = 1000;
 
 void deposit(int amount) {
-    balance = balance + amount;
+    sem.acquire();      // wait()
+
+    balance += amount;
+
+    sem.release();      // signal()
 }
 
 int main() {
-    thread t1(deposit, 100);
-    thread t2(deposit, 50);
+    std::thread t1(deposit, 100);
+    std::thread t2(deposit, 50);
 
     t1.join();
     t2.join();
 
-    cout << balance;
+    cout << "Balance = " << balance << '\n';
 }
